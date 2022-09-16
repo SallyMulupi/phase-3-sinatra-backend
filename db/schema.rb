@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_06_112924) do
+ActiveRecord::Schema.define(version: 2022_09_16_122347) do
 
-  create_table "bosses", force: :cascade do |t|
+  create_table "lecturers", force: :cascade do |t|
     t.string "name"
   end
 
-  create_table "employees", force: :cascade do |t|
+  create_table "students", force: :cascade do |t|
     t.string "name"
     t.string "category"
     t.boolean "is_present"
-    t.integer "boss_id"
+    t.integer "lecturer_id"
   end
 
 end

@@ -3,7 +3,7 @@ puts "🌱 Seeding spices..."
 # Seed your database 
 
 Lecturer.destroy_all
-Employee.destroy_all
+Student.destroy_all
 
 
 Mary = Lecturer.create(name: "Mary")

@@ -2,37 +2,37 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   # Add your routes here
-  get "/bosses" do
-    Boss.all.to_json
+  get "/lecturers" do
+    Lecturer.all.to_json
   end
 
-  get '/employees' do
-    Employee.all.to_json
+  get '/studentss' do
+    Student.all.to_json
   end
 
-  get '/bosses/:boss_id/employees' do
-    boss = Boss.find(params[:boss_id])
-    boss.employees.to_json
+  get '/lecturers/:lecturer_id/students' do
+    boss = Lecturer.find(params[:lecturer_id])
+    lecturer.students.to_json
   end
 
-  post '/employees' do
-    employee = Employee.create(
+  post '/students' do
+    student = Student.create(
       name: params[:name],
       category: params[:category],
       is_present: params[:is_present],
-      boss_id: params[:boss_id]
+      lecturer_id: params[:lecturer_id]
     ).to_json
   end
 
-  post '/bosses' do
-    boss = Boss.create(
+  post '/lecturers' do
+    lecturer = lecturer.create(
       name: params[:name]
-    ).to_json(include: :employees)
+    ).to_json(include: :students)
   end
 
-  patch '/employees/:id' do
-    employee = Employee.find(params[:id])
-    employee.update(
+  patch '/students/:id' do
+    student = Student.find(params[:id])
+    Student.update(
       name: params[:name],
       category: params[:category],
       is_present: params[:is_present]
@@ -40,9 +40,9 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/employee/:id' do
-    employee = Employee.find(params[:id])
-    employee.destroy
-    employee.to_json
+    student= Student.find(params[:id])
+    student.destroy
+    student.to_json
   end
 
 end
