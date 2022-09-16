@@ -45,7 +45,7 @@ Getting:
  * Or you can access the web application directly via this [LINK.]()
 *****
 ## Video demo link
- * https://drive.google.com/file/d/1foMdPb2hJwZ9A8iz-PolzwFeIP25CaTn/view?usp=sharing
+ * https://chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/a5f75ef7-ddfc-4efc-y016-ba05971b19ff
 
 ## Technologies Used
 1. HTML
