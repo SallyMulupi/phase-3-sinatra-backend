@@ -45,7 +45,7 @@ Getting:
  * Or you can access the web application directly via this [LINK.]()
 *****
 ## Video demo link
- * https://chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/a5f75ef7-ddfc-4efc-y016-ba05971b19ff
+ *//https://watch.screencastify.com/v/9oCxGUdeHinGO5dPKXw4
 
 ## Technologies Used
 1. HTML
